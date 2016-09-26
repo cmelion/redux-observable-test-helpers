@@ -1,0 +1,23 @@
+{
+  "name": "redux-observable-test-helpers",
+  "version": "1.0.0",
+  "description": "Unit test helpers for redux/rx",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmelion/redux-observable-test-helpers.git"
+  },
+  "keywords": [
+    "redux",
+    "rx"
+  ],
+  "author": "Charles Fulnecky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmelion/redux-observable-test-helpers/issues"
+  },
+  "homepage": "https://github.com/cmelion/redux-observable-test-helpers#readme"
+}
