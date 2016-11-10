@@ -1,6 +1,6 @@
 {
   "name": "redux-observable-test-helpers",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Unit test helpers for redux/rx",
   "main": "index.js",
   "scripts": {

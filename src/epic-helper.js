@@ -52,7 +52,7 @@ const expectEpic = (epic, {expected, action, response, call, callArgs, store, do
             if (replace) {
                 replaceValues(actual, expectation);
             }
-            actual.should.deep.equal(actual);
+            actual.should.deep.equal(expectation);
         }
     });
 
