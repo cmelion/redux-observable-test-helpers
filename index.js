@@ -5,4 +5,4 @@ var expectEpic = require('./lib/epic-helper');
 
 exports.MockWebSocket = ajaxHelper.MockWebSocket;
 exports.MockXMLHttpRequest = ajaxHelper.MockXMLHttpRequest;
-exports.ExpectEpic = expectEpic;
+exports.expectEpic = expectEpic;

@@ -1,3 +1,7 @@
+import sinon from 'sinon';
+import {ActionsObservable} from 'redux-observable';
+import get from 'lodash/get';
+
 const expectEpic = (epic, {expected, action, response, call, callArgs, store, done, replace}) => {
 
     const testScheduler = new TestScheduler((actual, expectation) => {
