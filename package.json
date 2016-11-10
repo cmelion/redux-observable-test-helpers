@@ -1,6 +1,6 @@
 {
   "name": "redux-observable-test-helpers",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Unit test helpers for redux/rx",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "dependencies": {
     "lodash": "4.16.6",
     "redux-observable": "0.12.1",
+    "rxjs": "5.0.0-rc.1",
     "sinon": "1.17.4"
   },
   "repository": {
