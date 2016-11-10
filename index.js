@@ -1,7 +1,7 @@
 'use strict';
 
 var ajaxHelper = require('./lib/ajax-helper');
-var expectEpic = require('./lib/epic-helper');
+var expectEpic = require('./lib/epic-helper').default;
 
 exports.MockWebSocket = ajaxHelper.MockWebSocket;
 exports.MockXMLHttpRequest = ajaxHelper.MockXMLHttpRequest;
