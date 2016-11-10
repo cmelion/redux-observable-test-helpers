@@ -31,10 +31,16 @@ const expectEpic = (epic, {expected, action, response, call, callArgs, store, do
             if (replace) {
                 replaceValues(actual, expectation);
             }
-            /* eslint-disable no-console */
-            console.log('expected', JSON.stringify(expectation));
-            console.log('actual--', JSON.stringify(actual));
-            /* eslint-enable no-console */
+
+            let e_str = JSON.stringify(expectation),
+                a_str = JSON.stringify(actual);
+            if (e_str !== a_str) {
+                /* eslint-disable no-console */
+                console.log('expected', JSON.stringify(expectation));
+                console.log('actual--', JSON.stringify(actual));
+                /* eslint-enable no-console */
+            }
+
             if (done) {
                 actual.should.deep.equal(expectation);
                 done();
