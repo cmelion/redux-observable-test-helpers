@@ -49,3 +49,5 @@ const expectEpic = (epic, {expected, action, response, call, callArgs, store, do
 
     testScheduler.expectSubscriptions(response$.subscriptions).toBe(responseSubs);
 };
+
+export default expectEpic;
