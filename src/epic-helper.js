@@ -4,7 +4,19 @@ import {ActionsObservable} from 'redux-observable';
 
 const {TestScheduler} = Rx;
 
-const expectEpic = (epic, {expected, action, response, call, callArgs, store, done, replace}) => {
+/**
+ *
+ * @param epic - the redux-observable epic to test
+ * @param action - the action the epic is listening for
+ * @param call -  (optional) a local sinon.spy used to get/set/reset api calls
+ * @param callArgs - (optional) An array containing the api method, followed by any params
+ * @param done - (optional) a reference to sinon done function
+ * @param expected - marble notation for the expected result
+ * @param replace - (optional) allows replacement of fields using timestamps or other generated values
+ * @param response - the expected payload
+ * @param store - (optional) a reference to the redux store
+ */
+const expectEpic = (epic, {action, call, callArgs, done, expected, replace, response, store}) => {
 
     const replacer = (key, value) => {
         // Filtering out properties
