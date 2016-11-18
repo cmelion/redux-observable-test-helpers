@@ -1,3 +1,6 @@
 
 .gitignore
 .idea/
+
+# Vendor files
+node_modules
