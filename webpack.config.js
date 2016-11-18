@@ -23,7 +23,7 @@ var config = {
         path: __dirname + '/lib',
         filename: outputFile,
         library: libraryName,
-        libraryTarget: 'umd',
+        libraryTarget: env === 'build' ? 'window' : 'umd',
         umdNamedDefine: true
     },
     module: {
