@@ -32,7 +32,10 @@ var config = {
                 test: /(\.jsx|\.js)$/,
                 loader: 'babel',
                 exclude: /(node_modules|bower_components)/
-            }
+            },
+            { test: require.resolve("redux-observable"), loader: "expose?$!expose?redux-observable" },
+            { test: require.resolve("rxjs"), loader: "expose?$!expose?rxjs" },
+            { test: require.resolve("sinon"), loader: "expose?$!expose?sinon" }
         ]
     },
 
