@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
+var dasherize = require('dasherize');
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var path = require('path');
 var env = require('yargs').argv.mode;
@@ -10,9 +11,9 @@ var plugins = [], outputFile;
 
 if (env === 'build') {
     plugins.push(new UglifyJsPlugin({ minimize: true }));
-    outputFile = libraryName + '.min.js';
+    outputFile = dasherize(libraryName) + '.min.js';
 } else {
-    outputFile = libraryName + '.js';
+    outputFile = dasherize(libraryName) + '.js';
 }
 
 var config = {
