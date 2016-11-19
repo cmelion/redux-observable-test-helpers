@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -z $(git status -uno --porcelain) ]]; then
-  VERSION="$(npm view redux-observable version)";
+  VERSION="$(npm view redux-observable-test-helpers version)";
   read -p "Enter the new version number: (currently ${VERSION}) " BUMP;
   VERSION="$(npm version $BUMP --no-git-tag-version)";
   conventional-changelog -p angular -i CHANGELOG.md -s;
