@@ -1,8 +1,6 @@
-import Rx from 'rxjs';
+import {TestScheduler} from 'rxjs';
 import sinon from 'sinon';
 import {ActionsObservable} from 'redux-observable';
-
-const {TestScheduler} = Rx;
 
 /**
  *
@@ -27,10 +25,10 @@ export const expectEpic = (epic, {action, call, callArgs, done, expected, replac
     };
 
     const replaceValues = (actual, expectation) => {
-        for (var i = 0; i < actual.length; i++) {
+        for (let i = 0; i < actual.length; i++) {
             actual[i] = JSON.parse(JSON.stringify(actual[i], replacer));
         }
-        for (var j = 0; j < expectation.length; j++) {
+        for (let j = 0; j < expectation.length; j++) {
             expectation[j] = JSON.parse(JSON.stringify(expectation[j], replacer));
         }
     };

@@ -1,5 +1,4 @@
 import webpack from 'webpack';
-import createRxJSExternals from 'webpack-rxjs-externals';
 
 const env = process.env.NODE_ENV;
 
@@ -10,18 +9,10 @@ const config = {
         ]
     },
     output: {
-        library: 'EpicHelpers',
+        library: 'EpicHelper',
         libraryTarget: 'umd'
     },
-    externals: {
-        ...createRxJSExternals(),
-        redux: {
-            root: 'Redux',
-            commonjs2: 'redux',
-            commonjs: 'redux',
-            amd: 'redux'
-        }
-    },
+    externals: {},
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.DefinePlugin({

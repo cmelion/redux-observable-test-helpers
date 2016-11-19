@@ -1,2 +1,2 @@
 export { MockWebSocket, MockXMLHttpRequest } from './ajax-helper';
-export { expectEpic }  from './epic-helper';
+export { expectEpic }  from './expectEpic';
