@@ -25,10 +25,10 @@ export const expectEpic = (epic, {action, call, callArgs, done, expected, replac
     };
 
     const replaceValues = (actual, expectation) => {
-        for (let i = 0; i < actual.length; i++) {
+        for (var i = 0; i < actual.length; i++) {
             actual[i] = JSON.parse(JSON.stringify(actual[i], replacer));
         }
-        for (let j = 0; j < expectation.length; j++) {
+        for (var j = 0; j < expectation.length; j++) {
             expectation[j] = JSON.parse(JSON.stringify(expectation[j], replacer));
         }
     };
