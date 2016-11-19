@@ -1,13 +1,13 @@
 {
   "name": "redux-observable-test-helpers",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "Unit test helpers for redux/rx",
   "main": "lib/epic-helper.js",
   "scripts": {
     "build": "npm run build:cjs && npm run build:umd && npm run build:umd:min",
     "build:cjs": "babel src -d lib",
-    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/redux-observable.js",
-    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/redux-observable.min.js",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/epic-helper.js",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/epic-helper.min.js",
     "eslint": "3.2.2",
     "lint": "eslint src",
     "shipit": "npm run clean && npm run build && npm test && scripts/preprepublish.sh && npm publish",
