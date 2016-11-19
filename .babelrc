@@ -1,4 +1,8 @@
 {
   "presets": ["es2015"],
-  "plugins": ["babel-plugin-add-module-exports"]
+  "plugins": [
+    "transform-function-bind",
+    "transform-es2015-modules-commonjs",
+    "transform-object-rest-spread"
+  ]
 }

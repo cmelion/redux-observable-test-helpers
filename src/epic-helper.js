@@ -16,7 +16,7 @@ const {TestScheduler} = Rx;
  * @param response - the expected payload
  * @param store - (optional) a reference to the redux store
  */
-const expectEpic = (epic, {action, call, callArgs, done, expected, replace, response, store}) => {
+export const expectEpic = (epic, {action, call, callArgs, done, expected, replace, response, store}) => {
 
     const replacer = (key, value) => {
         // Filtering out properties
@@ -88,4 +88,3 @@ const expectEpic = (epic, {action, call, callArgs, done, expected, replace, resp
     testScheduler.expectSubscriptions(response$.subscriptions).toBe(responseSubs);
 };
 
-export default expectEpic;
