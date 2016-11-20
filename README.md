@@ -6,7 +6,7 @@ Unit test helpers for redux-observable epics
 #### Install with [npm](npmjs.org):
 
 ```bash
-npm i redux-observabletest-helpers --save-dev
+npm i redux-observable-test-helpers --save-dev
 ```
 
 
