@@ -35,7 +35,7 @@ Signature
  *
  * @param epic     - the redux-observable epic to test
  *{
- * @param action   - the action the epic is listening for
+ * @param action   - marble notation for the action the epic is listening for
  * @param call     - (optional) a local sinon.spy used to get/set/reset api calls
  * @param callArgs - (optional) An array containing the api method, followed by any params
  * @param done     - (optional) mocha callback for async tests
