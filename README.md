@@ -35,7 +35,7 @@ Signature
  *
  * @param epic     - the redux-observable epic to test
  *{
- * @param action   - the action the epic is listening for
+ * @param action   - marble notation for the action the epic is listening for
  * @param call     - (optional) a local sinon.spy used to get/set/reset api calls
  * @param callArgs - (optional) An array containing the api method, followed by any params
  * @param done     - (optional) mocha callback for async tests
@@ -48,4 +48,6 @@ Signature
  const expectEpic = (epic, {action, call, callArgs, done, expected, replace, response, store}) => {...};
 ```
 
-[JSBin example](http://jsbin.com/dagiguw/embed?js,output)
+### Examples
+* [JSBin with multiple observables expected in the same frame ](http://jsbin.com/dagiguw/embed?js,output)
+* [JSBin with indirect ajax call](http://jsbin.com/vegonak/embed?js,output)
