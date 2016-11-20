@@ -3,6 +3,7 @@ import sinon from 'sinon';
 import {ActionsObservable} from 'redux-observable';
 
 /**
+ * expectEpic - test helper for redux-observable epics
  *
  * @param epic - the redux-observable epic to test
  * @param action - the action the epic is listening for
