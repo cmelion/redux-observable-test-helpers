@@ -9,6 +9,8 @@ Unit test helpers for redux-observable epics
 npm i redux-observable-test-helpers --save-dev
 ```
 
+## Background
+Testing async code that creates side effects isn't easy. One recommendation to make async testing with RXJS easier and more consistent is incorporating "marble notation" as a DSL for creating unit tests. "Marble Tests" are tests that use a specialized VirtualScheduler called the TestScheduler. They enable us to test asynchronous operations in a synchronous and dependable manner. By keeping our async "side-effects" within our epics we can leverage a simple test helper, expectEpic, to create concise and deterministic tests.
 
 ## Usage
 
