@@ -51,3 +51,4 @@ Signature
 ### Examples
 * [JSBin with multiple observables expected in the same frame ](http://jsbin.com/dagiguw/embed?js,output)
 * [JSBin with indirect ajax call](http://jsbin.com/vegonak/embed?js,output)
+* [JSBin with interval](http://jsbin.com/lefuva/embed?js,output)
