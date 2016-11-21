@@ -48,7 +48,10 @@ Signature
  const expectEpic = (epic, {action, call, callArgs, done, expected, replace, response, store}) => {...};
 ```
 
-### Examples
+### expectEpic Examples
 * [JSBin with multiple observables expected in the same frame ](http://jsbin.com/dagiguw/embed?js,output)
 * [JSBin with indirect ajax call](http://jsbin.com/vegonak/embed?js,output)
 * [JSBin with interval](http://jsbin.com/lefuva/embed?js,output)
+
+### Alternative MockXMLHttpRequest approach
+* http://jsbin.com/pudaqe/embed?js,output
