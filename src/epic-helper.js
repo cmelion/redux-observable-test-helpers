@@ -87,3 +87,7 @@ export const expectEpic = (epic, {action, call, callArgs, done, expected, replac
     testScheduler.expectSubscriptions(response$.subscriptions).toBe(responseSubs);
 };
 
+export const indirect = {
+    call:  (fn, ...args) => fn(...args)
+};
+
