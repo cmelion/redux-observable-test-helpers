@@ -1,17 +1,17 @@
 {
   "name": "redux-observable-test-helpers",
-  "version": "1.3.23",
+  "version": "1.3.24",
   "description": "Unit test helpers for redux/rx",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run build:cjs && npm run build:umd && npm run build:umd:min",
+    "build": "npm run build:cjs",
     "build:cjs": "babel src -d lib",
     "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/epic-helper.js",
     "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/epic-helper.min.js",
     "eslint": "3.2.2",
     "lint": "eslint src",
     "shipit": "npm run clean && npm run build && npm test && scripts/preprepublish.sh && npm publish",
-    "clean": "rimraf lib temp dist",
+    "clean": "rimraf lib temp",
     "test": "mocha --compilers js:babel-core/register --colors ./test/spec.js"
   },
   "files": [
