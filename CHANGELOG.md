@@ -1,3 +1,8 @@
+<a name="1.3.25"></a>
+## [1.3.25](https://github.com/cmelion/redux-observable-test-helpers/compare/v1.3.14...v1.3.25) (2016-12-20)
+
+
+
 <a name="1.3.24"></a>
 ## [1.3.24](https://github.com/cmelion/redux-observable-test-helpers/compare/v1.3.14...v1.3.24) (2016-11-29)
 
