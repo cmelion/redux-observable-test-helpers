@@ -1,4 +1,5 @@
 import {TestScheduler} from 'rxjs';
+import Chai from 'chai'; // You can use any testing library
 import sinon from 'sinon';
 import {ActionsObservable} from 'redux-observable';
 
@@ -15,6 +16,9 @@ import {ActionsObservable} from 'redux-observable';
  * @param response - the expected payload
  * @param store - (optional) a reference to the redux store
  */
+
+Chai.should();
+
 export const expectEpic = (epic, {action, call, callArgs, done, expected, replace, response, store}) => {
 
     const replacer = (key, value) => {
